@@ -7,7 +7,7 @@
   }
 
   const throttle = (callback, time) => {
-    if (timerId) return
+    if (timerId) return // 매번 초기화
     timerId = setTimeout(()=> {
       callback()
       timerId = undefined
